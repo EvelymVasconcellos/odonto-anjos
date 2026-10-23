@@ -183,8 +183,8 @@ function unitPanel(u, i) {
           ${hours}
           ${contact}
           <div class="unit__btns">
-            <a class="btn btn--gold" href="#contato" data-book-unit="${u.id}">${icon('wa')} Agendar nesta unidade</a>
             <a class="btn btn--line" href="${mapsDir(u)}" target="_blank" rel="noopener" data-route="${u.id}">${icon('route')} Como chegar<span class="sr-only"> (abre o Google Maps em nova aba)</span></a>
+            <a class="btn btn--gold" href="#contato" data-book-unit="${u.id}">${icon('wa')} Agendar nesta unidade</a>
           </div>
           ${notes.length ? `<p class="unit__note">${notes.map(esc).join(' ')}</p>` : ''}
         </article>`;
